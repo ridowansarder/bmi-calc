@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Know Your Body Mass Index(BMI) <i style="font-size: 10px;">(a calculator by Ridwan)</i></h1>
+    <div class="weight-input">
+    <label for="weight">Enter your weight:</label>
+    <input type="number" id="weight" placeholder="in kg" required>
+    </div>
+    <div class="height-input">
+    <label for="height">Enter your height: </label>
+    <input type="number" id="feet" placeholder="feet" min="1" max="8" required>
+    <input type="Number" id="inch" placeholder="inches" min="0" max="12" required><br>
+    <button id="calculator" onclick="calc()">Calculate</button>
+    </div>
+    <p id="result"></p>
+
+    <p>
+      <ul>
+      <li>Underweight: BMI < 18.5</li>
+      <li>Normal weight: BMI 18.5 - 24.9</li>
+      <li>Overweight: BMI 25 - 29.9</li>
+      <li>Obesity: BMI ≥ 30</li>
+      </ul>
+    </p>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
